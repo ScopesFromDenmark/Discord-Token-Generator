@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 discordname = input('Discord Account Name: ')
 DiscordEmail = input('Email (You can just put random shit):')
@@ -43,3 +44,4 @@ headers = {
 while True:
     response = requests.request("POST", url, headers=headers, data=payload)
     print(response.text)
+    time.sleep(3)
